@@ -40,7 +40,6 @@ body{
 }
 
 main{
-    border-radius: 25px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -48,6 +47,7 @@ main{
 
 picture{
     width: 100%;
+    padding: 0;
 }
 
 @media only screen and (max-width: 768px){
@@ -55,6 +55,9 @@ picture{
         float: left;
         content: "";
         width: 100%;
+    }
+    main{
+        display: grid
     }
 }
 
