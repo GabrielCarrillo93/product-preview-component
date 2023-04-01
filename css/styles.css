@@ -39,24 +39,29 @@ body{
 }
 
 main{
-    display: flex;
-    flex-wrap: nowrap;
     border-radius: 25px;
 }
 
-
-picture{
+.imgmbl{
+    display: none;
     width: 100%;
+}
+
+.imgdsk{
+    width: 100%;
+    height: 100%;
 }
 
 h1{
     font-family: 'Fraunces';
     font-weight: 700;
+    color: hsl(158, 36%, 37%);
 }
 
 p{
     font-family: 'Montserrat';
     font-weight: 400;
+    color: hsl(228, 12%, 48%);
 }
 
 .left, .left img{
@@ -64,8 +69,12 @@ p{
     border-bottom-left-radius: 25px;
 }
 
-.right{
-
+.buy{
+    width: 80%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 768px){
@@ -76,6 +85,14 @@ p{
     }
     main{
         display: grid
+    }
+
+    .imgmbl{
+        display: block;
+    }
+
+    .imgdsk{
+        display: none;
     }
 
     .left, .left img{
